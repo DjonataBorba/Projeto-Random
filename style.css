@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000000;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 25px;
+    font-size: 30px;
+    padding: 30px;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.input-number {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 100px;
+}
+
+.dice-random {
+    margin-top: 9%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    width: 15%;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 450px;
+    border-radius: 5px;
+    padding: 15px;
+    width: 500px;
+    background: red;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+input {
+    padding: 20px;
+    width: 300px;
+    font-size: 3dvh;
+    margin-top: 20px;
+    background-color: rgb(86, 83, 83);
+    color: #ffffff;
+    border-radius: 15px;
+}
+
+#resultado{
+    margin-left: 655px;
+    color: #ffffff;
+    margin-top: 10px;
+    transition: color 0.5s ease;
+    color: #ffffff;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: #fff;
+    margin-top: -120px;
+}
+
+h4 {
+    font-size: 50px;
+    color: #ffffff;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: #fff;
+    margin-bottom: -100px;
+    font-weight: 400;
+}
+
+@keyframes fadeZoom {
+    0%{
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+#resultado.animate {
+    animation: fadeZoom 0.6s ease-in-out;
+    color: #28a745;
+}
+
+@media screen and (max-width:980px) {
+
+    nav li {
+        margin-top: 10px;
+        margin-left: 15px;
+        font-size: 18px;
+        padding: 10px;
+        cursor: pointer;
+        color: #ffffff;
+    }
+
+    h2 {
+        margin-top: -65px;
+        font-size: 70px;
+        color: #fff;
+    }
+
+    .dice-random {
+        margin-top: 26%;
+        margin-left: 50%;
+        transform: translate(-50%, -50%);
+        width: 40%;
+    }
+
+    input {
+        padding: 10px;
+        width: 130px;
+        font-size: 2dvh;
+    }
+
+    .input-number {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        margin-top: 110px;
+    }
+
+    #resultado{
+        margin-left: 190px;
+    }
+
+    button {
+        margin-top: 25px;
+        margin-left: 18px;
+        font-size: 19px;
+        padding: 10px;
+        width: 350px;
+    }
+}

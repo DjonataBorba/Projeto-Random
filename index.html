@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Random Project</title>
+</head>
+
+<body>
+    <main>
+        <nav>
+            <ul>
+                <li>Inicio</li>
+                <li>Projetos</li>
+                <li>Random base</li>
+            </ul>
+        </nav>
+    </main>
+
+    <div class="dice-dev">
+        <img class="dice-random" src="./assets/dice-random.gif" alt="Dice-Random">
+        <h2>DevSorteio</h2>
+    </div>
+<br>
+<br>
+<br>
+
+    <p>Sorteie seu Número</p>
+    <div class="input-number">
+        <input class="input-min" placeholder="Número1" type="number">
+        <h4>vs</h4>
+        <input class="input-max" placeholder="Número2" type="number">
+    </div>
+
+    <h1 id="resultado">0</h1>
+
+    <button onclick="generateNumber()">Start Random</button>
+
+</body>
+
+<script src="./scripts.js"></script>
+</html>
